@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import map from './map.jpg'
+import ButtonAudio from './Component/Button.js';
+
 
 function App() {
   let audio1 = new Audio("./sound/Fanfare60.wav")
@@ -30,21 +32,9 @@ function App() {
       <button class="btn1" onClick={start1()}>13</button>
       <button class="btn2" onClick={start2}>2</button>
       <button class="btn3" onClick={start3}>3</button>
-    </div>
-
-
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ButtonAudio />
+      </div>
+    </header>
     </div>
   );
 }
