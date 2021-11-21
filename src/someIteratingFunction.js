@@ -17,5 +17,12 @@ const Articles = this.props.data.map((el, i) => {
 
 //new version
 const Buttons = GlobalData[locations].map((el, i) => {
-    var newID = el.title;
+    var newID = el.name;
+    var id = newID.replace(/ /g, "-");
+    console.log(id);
+    list[i] = {
+        name: el.name,
+        description: el.description
+    }
+    return <Button key={i} data={el} id={id}></Button>
 })
