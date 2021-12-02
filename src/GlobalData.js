@@ -3,13 +3,13 @@ const GlobalData = {
         {
             name: "poop",
             audioSource: "./audio/poop.mp3",
-            location: [100, 200],
+            location: [10, 20],
             description: "this is poopy"
         },
         {
             name: "poop",
             audioSource: "./audio/poop.mp3",
-            location: [100, 200],
+            location: [20, 20],
             description: "this is poopy"
         }
     ]

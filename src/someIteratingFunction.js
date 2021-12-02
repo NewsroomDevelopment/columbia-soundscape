@@ -22,7 +22,8 @@ const Buttons = GlobalData[locations].map((el, i) => {
     console.log(id);
     list[i] = {
         name: el.name,
-        description: el.description
+        description: el.description,
+        location: el.location
     }
-    return <Button key={i} data={el} id={id}></Button>
+    return <Button key={i} data={el} id={id} location={el.location}></Button>
 })
