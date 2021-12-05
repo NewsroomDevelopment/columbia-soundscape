@@ -18,6 +18,8 @@ const ButtonStyle = styled.button`
 const Play = (event, audioSource) => {
     console.log(event)
     console.log("played")
+    const sound = new Audio(audioSource);
+    sound.play();
 }
 
 const Button = ({ name, location, audioSource }) => {
