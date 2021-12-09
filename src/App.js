@@ -1,34 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
-import map from './map.jpg'
+import map from './map.png'
 import GlobalData from './GlobalData'
 import React from 'react';
 import Button from './Component/Button.js'
+import styled from 'styled-components';
 
-import fanfare from "./sound/Fanfare60.wav"
-import pinkpanther from "./sound/PinkPanther30.wav"
-import preamble from "./sound/preamble.wav"
+const Container = styled.div`
 
+background-image: url(${map});
+background-position: center;
+background-size:cover;
+padding: 30%;
+display: block;
+left-margin: auto;
+right-margin: auto;
+top-margin: auto;
+bottom-margin: auto;
+position: relative;
+`;
+
+const StyledDiv = styled.div`
+  
+  background-color: skyblue;
+`;
 class App extends React.PureComponent {
   render() {
-    let audio1 = new Audio(fanfare)
-    let audio2 = new Audio(pinkpanther)
-    let audio3 = new Audio(preamble)
-
-
-    function start1() {
-      console.log('tapped');
-      new Audio("./sound/Fanfare60.wav").play()
-    }
-
-    const start2 = () => {
-      audio2.play()
-    }
-
-    const start3 = () => {
-      audio3.play()
-    }
-
     var list = [];
     // const Buttons = GlobalData['locations'].map((el, i) => {
     //   var newID = el.name;
@@ -43,28 +40,11 @@ class App extends React.PureComponent {
     // })
     console.log(list)
     return (
-      <div className="App">
-        <header className="App-header">
-
-          <div class="container">
-            <img src={map} alt="Logo" />
+      <Container>
+            
             {GlobalData['locations'].map((button) => <Button class="btn1" name={button.name} location={button.location} audioSource={button.audioSource}>13</Button>)}
-          </div>
+      </Container>
 
-
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
     );
   }
 }

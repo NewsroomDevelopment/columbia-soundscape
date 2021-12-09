@@ -6,7 +6,7 @@ const ButtonStyle = styled.button`
     color: white;
     font-size: 20px;
     padding: 10px 60px;
-    position: absolute;
+    position: relative;
     top: ${(props) => props.location[0]}%;
     left: ${(props) => props.location[1]}%;
     border-radius: 5px;
