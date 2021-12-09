@@ -4,53 +4,28 @@ import map from './map.jpg'
 import GlobalData from './GlobalData'
 import React from 'react';
 import Button from './Component/Button.js'
+import styled from 'styled-components';
 
-import fanfare from "./sound/Fanfare60.wav"
-import pinkpanther from "./sound/PinkPanther30.wav"
-import preamble from "./sound/preamble.wav"
+const Background = styled.div`
+  position: relative;
+`
+
+const BackgroundImg = styled.img`
+  width:100%;
+  image-source: map;
+  height:auto;	
+`
 
 class App extends React.PureComponent {
+  
   render() {
-    let audio1 = new Audio(fanfare)
-    let audio2 = new Audio(pinkpanther)
-    let audio3 = new Audio(preamble)
-
-
-    function start1() {
-      console.log('tapped');
-      new Audio("./sound/Fanfare60.wav").play()
-    }
-
-    const start2 = () => {
-      audio2.play()
-    }
-
-    const start3 = () => {
-      audio3.play()
-    }
-
-    var list = [];
-    // const Buttons = GlobalData['locations'].map((el, i) => {
-    //   var newID = el.name;
-    //   var id = newID.replace(/ /g, "-");
-    //   console.log(id);
-    //   list[i] = {
-    //     name: el.name,
-    //     description: el.description,
-    //     location: el.location
-    //   }
-    //   return <Button key={i} data={el} id={id} location={el.location}></Button>
-    // })
-    console.log(list)
     return (
       <div className="App">
         <header className="App-header">
-
-          <div class="container">
-            <img src={map} alt="Logo" />
-            {GlobalData['locations'].map((button) => <Button class="btn1" name={button.name} location={button.location} audioSource={button.audioSource}>13</Button>)}
-          </div>
-
+        <Background class="container">
+          <BackgroundImg alt="Logo" />
+          {GlobalData['locations'].map((button) => <Button class="btn1" name={button.name} location={button.location} audioSource={button.audioSource}>13</Button>)}
+        </Background>
 
           <p>
             Edit <code>src/App.js</code> and save to reload.

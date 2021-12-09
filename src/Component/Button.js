@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import styled from 'styled-components';
 
 const ButtonStyle = styled.button`
@@ -17,15 +17,52 @@ const ButtonStyle = styled.button`
 `;
 
 var prevPlaying;
+var prevPlayingName;
+var paused;
 const Play = (event, audioSource) => {
     const sound = new Audio(audioSource);
+
     if (prevPlaying != null)
     {
         prevPlaying.pause();
+        if (prevPlayingName !== audioSource)
+        {
+            sound.play();
+            prevPlayingName = audioSource;
+            prevPlaying = sound;
+            paused = false;
+        }
+        else
+        {
+            if (paused) { prevPlaying.play();}
+            paused = !paused;
+        }
     }
-    sound.play();
-    prevPlaying = sound;
+    else
+    {
+        prevPlaying = sound;
+        prevPlayingName = audioSource;
+        sound.play();
+    }
+
+    sound.onended = function()
+    {
+        prevPlaying = null;
+        paused = false;
+        prevPlayingName = null;
+    }
+    prevPlaying.onended = function()
+    {
+        prevPlaying = null;
+        paused = false;
+        prevPlayingName = null;
+        console.log("reset");
+    }
 }
+
+
+
+
 
 const Button = ({ name, location, audioSource }) => {
     return <ButtonStyle onClick={(event) => Play(event, audioSource)} location={location}>{name}</ButtonStyle>;

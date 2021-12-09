@@ -7,13 +7,13 @@ const GlobalData = {
         {
             name: "poop",
             audioSource: fanfare,
-            location: [10, 20],
+            location: [100, 200],
             description: "this is poopy"
         },
         {
             name: "poop",
             audioSource: pinkpanther,
-            location: [20, 20],
+            location: [200, 200],
             description: "this is poopy"
         }
     ]
