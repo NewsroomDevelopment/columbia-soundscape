@@ -5,11 +5,15 @@ import GlobalData from './GlobalData'
 import React from 'react';
 import Button from './Component/Button.js'
 
+import fanfare from "./sound/Fanfare60.wav"
+import pinkpanther from "./sound/PinkPanther30.wav"
+import preamble from "./sound/preamble.wav"
+
 class App extends React.PureComponent {
   render() {
-    let audio1 = new Audio("./sound/Fanfare60.wav")
-    let audio2 = new Audio("./sound/PinkPanther30.wav")
-    let audio3 = new Audio("./sound/preamble.wav")
+    let audio1 = new Audio(fanfare)
+    let audio2 = new Audio(pinkpanther)
+    let audio3 = new Audio(preamble)
 
 
     function start1() {
