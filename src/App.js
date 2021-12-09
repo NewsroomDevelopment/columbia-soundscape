@@ -1,45 +1,38 @@
 import logo from './logo.svg';
 import './App.css';
-import map from './map.jpg'
+import map from './map.png'
 import GlobalData from './GlobalData'
 import React from 'react';
 import Button from './Component/Button.js'
 import styled from 'styled-components';
 
-const Background = styled.div`
-  position: relative;
-`
+const Container = styled.div`
 
-const BackgroundImg = styled.img`
-  width:100%;
-  image-source: map;
-  height:auto;	
-`
+background-image: url(${map});
+background-position: center;
+background-size:cover;
+padding: 30%;
+display: block;
+left-margin: auto;
+right-margin: auto;
+top-margin: auto;
+bottom-margin: auto;
+position: relative;
+`;
 
+const StyledDiv = styled.div`
+  
+  background-color: skyblue;
+`;
 class App extends React.PureComponent {
   
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-        <Background class="container">
-          <BackgroundImg alt="Logo" />
-          {GlobalData['locations'].map((button) => <Button class="btn1" name={button.name} location={button.location} audioSource={button.audioSource}>13</Button>)}
-        </Background>
+      <Container>
+            
+            {GlobalData['locations'].map((button) => <Button class="btn1" name={button.name} location={button.location} audioSource={button.audioSource}>13</Button>)}
+      </Container>
 
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
     );
   }
 }
