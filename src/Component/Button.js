@@ -18,24 +18,12 @@ const ButtonStyle = styled.button`
 
 var prevPlaying;
 const Play = (event, audioSource) => {
-    console.log(event)
-    console.log("played")
     const sound = new Audio(audioSource);
     if (prevPlaying != null)
     {
         prevPlaying.pause();
     }
     sound.play();
-
-    if (sound !== undefined) {
-        sound.then(function() {
-          // Automatic playback started!
-        }).catch(function(error) {
-          // Automatic playback failed.
-          // Show a UI element to let the user manually start playback.
-        });
-    }
-
     prevPlaying = sound;
 }
 
