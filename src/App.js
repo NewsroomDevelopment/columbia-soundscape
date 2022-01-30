@@ -25,20 +25,8 @@ const StyledDiv = styled.div`
   background-color: skyblue;
 `;
 class App extends React.PureComponent {
+  
   render() {
-    var list = [];
-    // const Buttons = GlobalData['locations'].map((el, i) => {
-    //   var newID = el.name;
-    //   var id = newID.replace(/ /g, "-");
-    //   console.log(id);
-    //   list[i] = {
-    //     name: el.name,
-    //     description: el.description,
-    //     location: el.location
-    //   }
-    //   return <Button key={i} data={el} id={id} location={el.location}></Button>
-    // })
-    console.log(list)
     return (
       <Container>
             

@@ -1,4 +1,3 @@
-
 import styled from 'styled-components';
 import './Button.css';
 import buttonImage from "../sound/download.png"
@@ -25,6 +24,7 @@ const ButtonStyle = styled.button`
 
 
 var prevPlaying;
+
 var prevSource
 
 
@@ -49,5 +49,6 @@ const Button = ({ name, location, audioSource, description }) => {
     return ( <div class="tooltip"> <ButtonStyle onClick={(event) => Play(event, audioSource)} location={location}><span class="tooltiptext">{description}</span></ButtonStyle>
     </div>);
 }
+
 
 export default Button;
