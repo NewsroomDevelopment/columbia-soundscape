@@ -6,7 +6,7 @@
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: black;
+    background-color: rgb(137,207,240);
     color: #fff;
     text-align: center;
     border-radius: 6px;
