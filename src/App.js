@@ -30,7 +30,7 @@ class App extends React.PureComponent {
     return (
       <Container>
             
-            {GlobalData['locations'].map((button) => <Button class="btn1" name={button.name} location={button.location} audioSource={button.audioSource}>13</Button>)}
+            {GlobalData['locations'].map((button) => <Button class="btn1" name={button.name} location={button.location} audioSource={button.audioSource} description = {button.description}>13</Button>)}
       </Container>
 
     );
