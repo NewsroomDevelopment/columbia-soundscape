@@ -1,12 +1,12 @@
 .tooltip {
     display: inline-block;
-    border-bottom: 1px dotted black;
+    /*border-bottom: 1px dotted black;*/
   }
   
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: rgb(137,207,240);
+    background-color: rgb(155, 203, 235);
     color: #fff;
     text-align: center;
     border-radius: 6px;
@@ -14,9 +14,10 @@
   
     /* Position the tooltip */
     position: absolute;
-    z-index: 1;
+    z-index: 10;
   }
   
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+

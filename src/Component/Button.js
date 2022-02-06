@@ -1,22 +1,19 @@
 import styled from 'styled-components';
 import './Button.css';
-import buttonImage from "../sound/download.png"
+import buttonImage from "../sound/button.png"
 
 
 const ButtonStyle = styled.button`
-    background-color: rgb(137,207,240);
-    //background: url(${buttonImage});
-    color: grey;
+    //background-color: rgb(137,207,240);
+    background: url(${buttonImage});
+    background-size: cover;
     font-size: calc(1em + 0.5vmin);
-    width: 3.2%;
+    width: 3%;
     height: 5%;
     position: absolute;
     top: ${(props) => props.location[0]}%;
     left: ${(props) => props.location[1]}%;
-    border-radius: 5px;
-    border: 2px solid white;
-    margin: 10px 0px;
-    z-index:100;
+    border: none;
     cursor: pointer;
     Access-Control-Allow-Origin: *
 `;
@@ -37,6 +34,7 @@ const Play = (event, audioSource) => {
     if(prevSource == audioSource){
         prevPlaying.pause();
         sound.pause();
+        prevSource = null;
     }
     else{
         sound.play();

@@ -13,12 +13,12 @@ import subway from "./sound/subway station at 116th and broadway.mp3"
 
 const GlobalData = {
     locations: [
-        {
+        /*{
             name: "industry baby",
             audioSource: industry,
             location: [65, 20],
-            description: "this is poopy"
-        },
+            description: ""
+        },*/
         {
             name: "broadway",
             audioSource: broadway,
