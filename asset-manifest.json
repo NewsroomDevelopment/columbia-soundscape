@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/columbia-soundscape/static/css/main.2fed8cfa.chunk.css",
-    "main.js": "/columbia-soundscape/static/js/main.82dc3af6.chunk.js",
-    "main.js.map": "/columbia-soundscape/static/js/main.82dc3af6.chunk.js.map",
-    "runtime-main.js": "/columbia-soundscape/static/js/runtime-main.94826aad.js",
-    "runtime-main.js.map": "/columbia-soundscape/static/js/runtime-main.94826aad.js.map",
-    "static/js/2.df6fc788.chunk.js": "/columbia-soundscape/static/js/2.df6fc788.chunk.js",
-    "static/js/2.df6fc788.chunk.js.map": "/columbia-soundscape/static/js/2.df6fc788.chunk.js.map",
-    "static/js/3.1b2daac8.chunk.js": "/columbia-soundscape/static/js/3.1b2daac8.chunk.js",
-    "static/js/3.1b2daac8.chunk.js.map": "/columbia-soundscape/static/js/3.1b2daac8.chunk.js.map",
+    "main.js": "/columbia-soundscape/static/js/main.29a55a65.chunk.js",
+    "main.js.map": "/columbia-soundscape/static/js/main.29a55a65.chunk.js.map",
+    "runtime-main.js": "/columbia-soundscape/static/js/runtime-main.24eea61e.js",
+    "runtime-main.js.map": "/columbia-soundscape/static/js/runtime-main.24eea61e.js.map",
+    "static/js/2.70a90eb6.chunk.js": "/columbia-soundscape/static/js/2.70a90eb6.chunk.js",
+    "static/js/2.70a90eb6.chunk.js.map": "/columbia-soundscape/static/js/2.70a90eb6.chunk.js.map",
+    "static/js/3.52cb41a3.chunk.js": "/columbia-soundscape/static/js/3.52cb41a3.chunk.js",
+    "static/js/3.52cb41a3.chunk.js.map": "/columbia-soundscape/static/js/3.52cb41a3.chunk.js.map",
     "index.html": "/columbia-soundscape/index.html",
     "static/css/main.2fed8cfa.chunk.css.map": "/columbia-soundscape/static/css/main.2fed8cfa.chunk.css.map",
-    "static/js/2.df6fc788.chunk.js.LICENSE.txt": "/columbia-soundscape/static/js/2.df6fc788.chunk.js.LICENSE.txt",
+    "static/js/2.70a90eb6.chunk.js.LICENSE.txt": "/columbia-soundscape/static/js/2.70a90eb6.chunk.js.LICENSE.txt",
     "static/media/114 and broadway - street.9fcf91c5.mp3": "/columbia-soundscape/static/media/114 and broadway - street.9fcf91c5.mp3",
     "static/media/116th and amsterdam - street  .7df49fe5.mp3": "/columbia-soundscape/static/media/116th and amsterdam - street  .7df49fe5.mp3",
     "static/media/[Waploaded_5528]Lil_Nas_X__Industry_Baby_Ft_Jack_Harlow.862ff6d7.mp3": "/columbia-soundscape/static/media/[Waploaded_5528]Lil_Nas_X__Industry_Baby_Ft_Jack_Harlow.862ff6d7.mp3",
@@ -28,9 +28,9 @@
     "static/media/subway station at 116th and broadway.1f0c37ef.mp3": "/columbia-soundscape/static/media/subway station at 116th and broadway.1f0c37ef.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.94826aad.js",
-    "static/js/2.df6fc788.chunk.js",
+    "static/js/runtime-main.24eea61e.js",
+    "static/js/2.70a90eb6.chunk.js",
     "static/css/main.2fed8cfa.chunk.css",
-    "static/js/main.82dc3af6.chunk.js"
+    "static/js/main.29a55a65.chunk.js"
   ]
 }
