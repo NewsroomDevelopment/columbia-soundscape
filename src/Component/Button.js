@@ -18,10 +18,6 @@ const ButtonStyle = styled.button`
     border: none;
     cursor: pointer;
     Access-Control-Allow-Origin: *
-    .click:hover {
-        transform: scale(0.6);
-        transition-duration: 0.5s;
-    }
 `;
 
 
